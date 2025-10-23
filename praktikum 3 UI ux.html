@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tom and jerry</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      line-height: 1.5;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      border: 1px solid #aaa;
+      padding: 20px;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    .profile-info {
+      flex: 1;
+      margin-left: 20px;
+    }
+    .profile-info h2 {
+      margin-top: 0;
+    }
+    .categories {
+      text-align: right;
+    }
+    .categories p {
+      margin: 0;
+    }
+    .attachments {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .attachment-images {
+      display: grid;
+      grid-template-columns: repeat(2, 100px);
+      gap: 10px;
+    }
+    .attachment-images div {
+      width: 100px;
+      height: 100px;
+      background-color: #ddd;
+      border: 1px solid #999;
+    }
+    .attachment-links {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+    .attachment-links a {
+      color: blue;
+      text-decoration: none;
+    }
+    .attachment-links a:hover {
+      text-decoration: underline;
+    }
+    .audio {
+      width: 100%;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h3>tom and jerry</h3>
+
+    <div class="header">
+      <div class="image-box" style="width:150px;height:150px;border:1px solid #000;background:#eee;"></div>
+
+      <div class="profile-info">
+        <h2>nurintan mutia</h2>
+        <p>jln mardhotillah<br>
+        no52<br>
+        jakarta selatan</p>
+        <p><strong>Email:</strong> nurintan mutia781gmail.com<br>
+        <strong>Telephone:</strong> 083160723983</p>
+      </div>
+
+      <div class="categories">
+        <p><strong>Categories</strong></p>
+        <p>Lorem ipsum<br>dolor sit<br>amet</p>
+      </div>
+    </div>
+
+    <p>
+      tom and jerry adalah serial kartun klasik yg menceritakan persaingan lucu antara tom seekor kucing rumah dan jery seekor tikus cerdik
+      kartun ini terkenal karena komedi tanpa banyak dialog aksi kejar kejaran yg lucu serta musik yg khas diciptakan oleh william hanna danjoseph berbera .
+    </p>
+    <p>
+      dalam setiap episode ny tom selaly berusaha  menangkap jerry tetapi hampir selalu gagal karna jerry lebih cerdas dan licikk.
+    </p>
+
+    <div class="attachments">
+      <div>
+        <div class="attachment-images">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <audio controls class="audio">
+          <source src="#" type="audio/mpeg">
+          Browser Anda tidak mendukung pemutar audio.
+        </audio>
+      </div>
+
+      <div class="attachment-links">
+        <p><strong>Attachments</strong></p>
+        <a href="#">Lorem ipsum dolor sit amet</a>
+        <a href="#">Lorem ipsum dolor sit amet</a>
+        <a href="#">Lorem ipsum dolor sit amet</a>
+        <a href="#">Lorem ipsum dolor sit amet</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
