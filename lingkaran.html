@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <title>Hitung Luas & Keliling Lingkaran</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; max-width: 480px; margin: auto; }
+    label, input, button { display:block; margin: 8px 0; }
+    .result { margin-top: 12px; padding: 8px; border: 1px solid #ddd; border-radius: 6px; }
+  </style>
+</head>
+<body>
+  <h2>Hitung Luas & Keliling Lingkaran</h2>
+  <label>Jari-jari (r):
+    <input id="radius" type="number" step="any" placeholder="Masukkan jari-jari" />
+  </label>
+  <button id="calc">Hitung</button>
+
+  <div id="output" class="result" aria-live="polite"></div>
+
+  <script>
+    document.getElementById('calc').addEventListener('click', function() {
+      const inp = document.getElementById('radius').value;
+      const r = Number(inp);
+      const out = document.getElementById('output');
+
+      if (inp === '' || Number.isNaN(r)) {
+        out.innerHTML = '<strong>Error:</strong> Masukkan angka yang valid.';
+        return;
+      }
+      if (r < 0) {
+        out.innerHTML = '<strong>Error:</strong> Jari-jari tidak boleh negatif.';
+        return;
+      }
+
+      const luas = Math.PI * r * r;
+      const keliling = 2 * Math.PI * r;
+
+      out.innerHTML = 
+        <div>Jari-jari: ${r}</div>
+        <div>Luas: ${luas.toFixed(4)}</div>
+        <div>Keliling: ${keliling.toFixed(4)}</div>
+      ;
+    });
+  </script>
+</body>
+</html>
